@@ -15,7 +15,7 @@ Built with Spring Boot 4 · Secured with JWT · Backed by MongoDB & Redis
 
 ---
 
-*Scholar Bites is a secure, feature-rich backend API for journaling applications. Users create personal journal entries tagged with emotional sentiments, receive weekly email digests analyzing their mood patterns, and get greeted with real-time weather data — all behind stateless JWT authentication.*
+*DayScript is a secure, feature-rich backend API for journaling applications. Users create personal journal entries tagged with emotional sentiments, receive weekly email digests analyzing their mood patterns, and get greeted with real-time weather data — all behind stateless JWT authentication.*
 
 </div>
 
