@@ -583,7 +583,7 @@ curl http://localhost:8080/user/external-api \
 | Method | Route | Description |
 |:---|:---|:---|
 | `GET` | `/dbinfo` | Returns the connected MongoDB database name |
-| `GET` | `/test` | Health check — creates and saves a test journal entry |
+| `GET` | `/test` | Health check — Verifying Backend is Working or not. |
 
 ---
 
