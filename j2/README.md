@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📝 Scholar Bites
+# 📝 DayScript
 
 **A production-grade Journaling & Sentiment Analysis REST API**
 
