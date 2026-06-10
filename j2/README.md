@@ -316,6 +316,28 @@ curl -X POST http://localhost:8080/public/create-user \
 </details>
 
 <details>
+<summary><code>POST</code> <code>/public/signup</code> — Sign up a new user</summary>
+
+**Request Body:**
+```json
+{
+  "username": "kavish",
+  "password": "mypassword",
+  "email": "kavish@example.com"
+}
+```
+
+**Response:** `200 OK` (empty body)
+
+**Example:**
+```bash
+curl -X POST http://localhost:8080/public/signup \
+  -H "Content-Type: application/json" \
+  -d '{"username":"kavish","password":"mypassword","email":"kavish@example.com"}'
+```
+</details>
+
+<details>
 <summary><code>POST</code> <code>/public/login</code> — Authenticate and receive a JWT</summary>
 
 **Request Body:**
@@ -352,6 +374,21 @@ echo $TOKEN
 ### Journal Endpoints — `/journal` 🔒
 
 > All endpoints require `Authorization: Bearer <token>` header.
+
+<details>
+<summary><code>GET</code> <code>/journal/app</code> — Test journal endpoint</summary>
+
+**Response:** `200 OK`
+```
+Hello
+```
+
+**Example:**
+```bash
+curl http://localhost:8080/journal/app \
+  -H "Authorization: Bearer $TOKEN"
+```
+</details>
 
 <details>
 <summary><code>GET</code> <code>/journal</code> — Get all journal entries</summary>
@@ -633,6 +670,7 @@ flowchart LR
 
 <div align="center">
 
+**Built with ❤️ by Kavish**
 
 *If this project helped you, consider giving it a ⭐*
 
