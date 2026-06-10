@@ -658,7 +658,7 @@ flowchart LR
 |:---|:---|
 | **Password storage** | BCrypt via `BCryptPasswordEncoder` — passwords are never stored in plaintext |
 | **Session management** | `STATELESS` — no server-side sessions; every request must carry a JWT |
-| **Token expiry** | 1 hour (`1000 * 60 * 60` ms) |
+| **Token expiry** | 1 hour (`1000 * 60 * 10` ms) |
 | **Token signing** | HMAC-SHA256 via JJWT |
 | **CSRF** | Disabled (appropriate for stateless REST APIs) |
 | **Filter chain** | `jwtfilter` is inserted before `UsernamePasswordAuthenticationFilter` |
