@@ -633,7 +633,6 @@ flowchart LR
 
 <div align="center">
 
-**Built with ❤️ by Kavish**
 
 *If this project helped you, consider giving it a ⭐*
 
