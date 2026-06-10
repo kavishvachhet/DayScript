@@ -1,0 +1,78 @@
+.dashboard-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.stat-card {
+  padding: 16px 20px;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.stat-happy .stat-value { color: var(--sentiment-happy); }
+.stat-sad .stat-value { color: var(--sentiment-sad); }
+.stat-angry .stat-value { color: var(--sentiment-angry); }
+.stat-anxious .stat-value { color: var(--sentiment-anxious); }
+
+.stat-happy { border-color: rgba(16, 185, 129, 0.15); }
+.stat-sad { border-color: rgba(99, 102, 241, 0.15); }
+.stat-angry { border-color: rgba(239, 68, 68, 0.15); }
+.stat-anxious { border-color: rgba(245, 158, 11, 0.15); }
+
+/* Journal grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-top {
+    flex-direction: column;
+  }
+
+  .dashboard-top .btn {
+    width: 100%;
+  }
+
+  .dashboard-stats {
+    flex-wrap: nowrap;
+  }
+
+  .stat-card {
+    min-width: 100px;
+  }
+}

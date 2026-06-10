@@ -1,0 +1,33 @@
+.weather-widget {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--gradient-subtle);
+  border: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+.weather-icon {
+  font-size: 1.5rem;
+}
+
+.weather-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.weather-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.weather-error {
+  border-color: rgba(239, 68, 68, 0.12);
+  background: var(--danger-bg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,46 @@
+.sentiment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: all var(--transition-fast);
+}
+
+.sentiment-md {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+.sentiment-lg {
+  padding: 8px 18px;
+  font-size: 0.875rem;
+}
+
+.sentiment-happy {
+  background: var(--sentiment-happy-bg);
+  color: var(--sentiment-happy);
+}
+
+.sentiment-sad {
+  background: var(--sentiment-sad-bg);
+  color: var(--sentiment-sad);
+}
+
+.sentiment-angry {
+  background: var(--sentiment-angry-bg);
+  color: var(--sentiment-angry);
+}
+
+.sentiment-anxious {
+  background: var(--sentiment-anxious-bg);
+  color: var(--sentiment-anxious);
+}
+
+.sentiment-emoji {
+  font-size: 1em;
+}

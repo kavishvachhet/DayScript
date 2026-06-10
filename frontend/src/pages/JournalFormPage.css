@@ -1,0 +1,105 @@
+.journal-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.journal-form {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.journal-form textarea.input-field {
+  min-height: 200px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Sentiment picker */
+.sentiment-picker {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sentiment-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background: var(--bg-glass);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.sentiment-pill:hover {
+  background: var(--bg-glass-hover);
+  transform: translateY(-2px);
+}
+
+.sentiment-pill.selected {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.sentiment-pill.selected.sentiment-happy {
+  background: var(--sentiment-happy-bg);
+  color: var(--sentiment-happy);
+  border-color: var(--sentiment-happy);
+}
+
+.sentiment-pill.selected.sentiment-sad {
+  background: var(--sentiment-sad-bg);
+  color: var(--sentiment-sad);
+  border-color: var(--sentiment-sad);
+}
+
+.sentiment-pill.selected.sentiment-angry {
+  background: var(--sentiment-angry-bg);
+  color: var(--sentiment-angry);
+  border-color: var(--sentiment-angry);
+}
+
+.sentiment-pill.selected.sentiment-anxious {
+  background: var(--sentiment-anxious-bg);
+  color: var(--sentiment-anxious);
+  border-color: var(--sentiment-anxious);
+}
+
+.journal-form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 480px) {
+  .journal-form {
+    padding: 20px;
+  }
+
+  .sentiment-picker {
+    gap: 8px;
+  }
+
+  .sentiment-pill {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .journal-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .journal-form-actions .btn {
+    width: 100%;
+  }
+}
