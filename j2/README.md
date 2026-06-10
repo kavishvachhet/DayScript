@@ -192,8 +192,8 @@ src/main/java/com/example/j2/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Scholar-Bites.git
-cd Scholar-Bites
+git clone https://github.com/kavishvachhet/DayScript.git
+cd DayScript
 ```
 
 ### 2. Configure environment
@@ -256,7 +256,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 
 ## 🔑 Authentication Flow
 
-Scholar Bites uses **stateless JWT authentication**. Tokens are signed with HMAC-SHA256 and expire after **1 hour**.
+DayScript uses **stateless JWT authentication**. Tokens are signed with HMAC-SHA256 and expire after **1 hour**.
 
 ```mermaid
 sequenceDiagram
